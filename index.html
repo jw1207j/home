@@ -6,17 +6,18 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="header">
     <h1>정종원 홈페이지에 오신걸 환영합니다.</h1>
-    <input type="button" value="night" onclick="
-    document.querySelector('body').style.backgroundColor='black';
-    document.querySelector('body').style.color='white';
-    ">
-    <input type="button" value="day" onclick="
-    document.querySelector('body').style.backgroundColor='white';
-    document.querySelector('body').style.color='black';
-    ">
-  </div>
+    <input id="night_day" type="button" value="night" onclick="
+     if(document.querySelector('#night_day').value==='night'){
+       document.querySelector('body').style.backgroundColor='black';
+       document.querySelector('body').style.color='white';
+       document.querySelector('#night_day').value='day';
+     } else {
+       document.querySelector('body').style.backgroundColor='white';
+       document.querySelector('body').style.color='black';
+       document.querySelector('#night_day').value='night';
+     }">
+
   <div id="grid">
     <ol>
       <li><a href="God.html">하나님</a></li>
