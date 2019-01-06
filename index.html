@@ -1,63 +1,117 @@
-<!doctype html>
+<!doctype>
 <html>
 <head>
-  <title>jwjeong-homepage</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
-  <script src="colors.js">
-  </script>
+   <meta charset="utf-8">
+   <style>
+       .container{
+           display:flex;
+           flex-direction:column;
+       }
+    
+      header {
+            background: url(picture/mountain.jpg);
+            color: orange;
+            font-size: 20px;
+            font-weight: bold;
+            width: 1600px;
+            height:250px;
+            line-height:180px;
+        } 
+       h1 {
+           padding-left: 20px;
+       }
+       footer{
+           border-top:1px solid gray;
+           padding:20px;
+           text-align:center;
+       }
+       .content{
+           display:flex;
+           flex-direction: row;
+           
+       }
+       .item{
+            flex-grow:1;
+       }
+       .content nav{
+           border-right:1px solid gray;
+           flex-basis:130px;
+           flex-shrink:0;
+       }
+
+       .content main{
+           flex-basis: 800px;
+/*           flex-shrink: 0;*/
+           padding:10px;
+           text-align:justify;
+       }
+       .content aside{
+           border-left:1px solid gray;
+           padding:20px;    
+       }
+   </style>
 </head>
 <body>
-    <h1>정종원 홈페이지에 오신걸 환영합니다.</h1>
-    <input type="button" value="night" onclick="
-    nightDayHandler(this);
-    ">
+    <div class="container">
+      
+       <header>
+            <h1>정종원홈페이지</h1>
+       </header>
+       <section class="content">
+          <nav class="item">
+                 <ul>
+                  <li><a href="God.html">하나님</a></li>
+                  <li><a href="index.html">소개</a></li>
+                  <li><a href="picture.html">사진</a></li>
+                  <li><a href="it.html">IT</a></li>  
+                  <li><a href="letter.html">글</a></li>  
+                  <li><a href="english.html">영어성경</a></li>  
+                 </ul>
+                  
+          </nav>
+          <main class="item">
+              <h2>소개</h2>
+                <p>나이들어 홈페이지를 만들었습니다. 돌아보니 나 자신만을 위한 삶이었고 실수와 이기심으로 범벅된 그런 인생을 살았습니다.
+                  이제 그리스도 예수그리스도의 사랑을 체험하고 무엇이 사랑인지 알기 시작하였습니다.예수님의 말씀을 청종하는 것이 생명임을 알았습니다.
+                  그의 말씀을 온 몸과 마음으로 느끼고 그 은혜로, 마음에서 우러나는 진심으로 정직하고 진실한 행동을 하길 원합니다.
+                </p>
+                <P>요즘 인터넷과 프로그래밍을 배우고 있습니다. 주님께서 어떻게 인도하실지 궁금하지만 우선은 차분하게 배움에 정진하고자 합니다.
+                물론 어렵고 힘들지만 때마다 이결낼 힘과 지혜를 주셔서 잘 해나가고 있습니다. 이배움을 통하여 그리스도 예수안에서 열매맺기를 소망합니다.
+                </p>
+                <P> 현재 대학원 생활을 하고 있으며 방향은 소프트 웨어 프로그래밍 개발을 목표로 공부하고 있습니다. 그동안 C언어, 자바, 안드로이드프로그래밍, HTML5, CSS, JAVASCRIPT 중심으로 공부하였으며 홈페이지 제작 안드로이드앱 제작을 목표로 공부하고 있습니다. 자세한 내용은 IT.html 페이지에 기록하겠습니다.
+                </p>
+                <P>사진과 동영상은 주로 가족입니다. 할수 있는 한 가족과 여행다니길 희망하며 사진을 통하여 소중한 기억으로 간직하고 싶습니다.
+                </p>
+          </main>
+          <aside class="item">
+              환영하고 사랑합니다.
+          </aside>
+           
+       </section>
+       <footer>
+           <p>
+            <div id="disqus_thread"></div>
+            <script>
 
-  <div id="grid">
-    <ol>
-      <li><a href="God.html">하나님</a></li>
-      <li><a href="index.html">소개</a></li>
-      <li><a href="picture.html">사진</a></li>
-      <li><a href="letter.html">글</a></li>
-      <li><a href="it.html">IT</a></li>
-      <li><a href="english.html">영어</a></li>
-    </ol>
-    <div id="article">
-    <h2>소개</h2>
-    <p>나이들어 홈페이지를 만들었습니다. 돌아보니 나 자신만을 위한 삶이었고 실수와 이기심으로 범벅된 그런 인생을 살았습니다.
-      이제 그리스도 예수그리스도의 사랑을 체험하고 무엇이 사랑인지 알기 시작하였습니다.예수님의 말씀을 청종하는 것이 생명임을 알았습니다.
-      그의 말씀을 온 몸과 마음으로 느끼고 그 은혜로, 마음에서 우러나는 진심으로 정직하고 진실한 행동을 하길 원합니다.
-    </p>
-    <P>요즘 인터넷과 프로그래밍을 배우고 있습니다. 주님께서 어떻게 인도하실지 궁금하지만 우선은 차분하게 배움에 정진하고자 합니다.
-    물론 어렵고 힘들지만 때마다 이결낼 힘과 지혜를 주셔서 잘 해나가고 있습니다. 이배움을 통하여 그리스도 예수안에서 열매맺기를 소망합니다.
-    </p>
-    <P> 현재 대학원 생활을 하고 있으며 방향은 소프트 웨어 프로그래밍 개발을 목표로 공부하고 있습니다. 그동안 C언어, 자바, 안드로이드프로그래밍, HTML5, CSS, JAVASCRIPT 중심으로 공부하였으며 홈페이지 제작 안드로이드앱 제작을 목표로 공부하고 있습니다. 자세한 내용은 IT.html 페이지에 기록하겠습니다.
-    </p>
-    <P>사진과 동영상은 주로 가족입니다. 할수 있는 한 가족과 여행다니길 희망하며 사진을 통하여 소중한 기억으로 간직하고 싶습니다.
-    </p>
-  </div>
-</div>
-<p>
-<div id="disqus_thread"></div>
-<script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://web2-vtbbjjmgbu.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</p>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://web2-vtbbjjmgbu.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </p>
+       </footer>
+    </div>
 </body>
 </html>
